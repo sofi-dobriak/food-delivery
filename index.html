@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Normalize -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>FoodSta</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="logo header-logo" href="./index.html"><img src="./images/logo.svg" alt="Logo" width="66"
+                        height="55"></a>
+
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-link" href="">Home</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="">About</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="">Service</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="">Menu</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="">Contact</a></li>
+                </ul>
+
+                <button class="header-button" type="button">Order Now</button>
+            </nav>
+
+
+            <!-- Burger button -->
+            <button class="header-burger" type="button">
+                <svg class="header-burger-icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-burder-button"></use>
+                </svg>
+            </button>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu "> <!--is-open-->
+                <button class="mobile-menu-button-close" type="button">
+                    <svg class="mobile-menu-icon-close" width="10" height="10">
+                        <use href="./images/icons.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+
+                <!-- Mobile menu links -->
+                <nav>
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Home</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">About</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Service</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Menu</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="section-title hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+                <p class="hero-text">
+                    With just a few clicks, you can have your favorite meals delivered straight to your doorstep, no
+                    matter
+                    where you are.
+                    Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
+                </p>
+                <button class="button hero-button" type="button">Order Now</button>
+                <!-- <img src="./images/hero-section.png" alt="Salad bowl" width="528"> -->
+            </div>
+        </section>
+
+        <!-- Offer section -->
+        <section class="section offer-section">
+            <div class="container">
+
+                <picture>
+                    <source srcset="" media="(min-width: 1280px)" />
+                    <source srcset="" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/apple.png 1x, ./images/mobile/apple@2x.png 2x"
+                        media="(max-width: 767px)" />
+                    <img class="offer-img" src="./images/mobile/apple.png" alt="A green apple">
+                </picture>
+
+                <h2 class="section-title offer-title">What's Special About Our Offerings</h2>
+                <p class="offer-text">
+                    With our platform, you can browse through a diverse selection of cuisines and local restaurants, and
+                    choose from a
+                    variety of dishes that cater to your specific taste buds.
+                </p>
+                <ul class="offer-list">
+                    <li class="offer-item">
+                        <svg class="offer-item-icon" width="26" height="26">
+                            <use href="./images/icons.svg#icon-racket"></use>
+                        </svg>
+                        <h3 class="offer-item-title">Fasest Delivery</h3>
+                        <p class="offer-item-text">
+                            Our advanced logistics system and dedicated delivery partners ensure that your meals are
+                            delivered to you within 30-minutes.
+                        </p>
+                    </li>
+                    <li class="offer-item">
+                        <svg class="offer-item-icon" width="22" height="28">
+                            <use href="./images/icons.svg#icon-touch"></use>
+                        </svg>
+                        <h3 class="offer-item-title">Easy To Order</h3>
+                        <p class="offer-item-text">
+                            You can browse through a wide variety of cuisines and restaurants, select your favorite
+                            meals,
+                            and place your order in just a few clicks.
+                        </p>
+                    </li>
+                </ul>
+                <div class="offer-button-link-container">
+                    <button class="button offer-button" type="button">Order Now</button>
+                    <div class="offer-link-container">
+                        <a class="offer-link" href="">
+                            Read more
+                            <svg class="offer-link-icon" width="6" height="10">
+                                <use href="./images/icons.svg#icon-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Favorite section -->
+        <section class="section favorite-section">
+            <div class="container">
+                <h2 class="section-title favorite-title">Some of Our Favorites</h2>
+                <p class="favorite-text">Looking for something delicious?</p>
+                <ul class="favorite-list">
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="" media="(min-width: 1280px)">
+                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/gamburger.png 1x, ./images/mobile/gamburger@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="favorite-item-img" src="./images/mobile/gamburger.png" alt="Gamburger">
+                        </picture>
+                    </li>
+
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="" media="(min-width: 1280px)">
+                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/pasta.png 1x, ./images/mobile/pasta@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="favorite-item-img" src="./images/mobile/pasta.png" alt="Pasta">
+                        </picture>
+                    </li>
+
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="" media="(min-width: 1280px)">
+                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/pizza.png 1x, ./images/mobile/pizza@2x.png 2x"
+                                media="(max-width: 767px)">
+                            <img class="favorite-item-img" src="./images/mobile/pizza.png" alt="Gamburger">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Feedback secton -->
+        <section class="section feedback-section">
+            <div class="container">
+                <h2 class="section-title feedback-title">What our Customers Say</h2>
+                <p class="feedback-text">Don't just take our word for it - see what our satisfied customers have to say
+                </p>
+                <ul class="feedback-list">
+                    <li class="feedback-item">
+
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+
+                        <p class="feedback-item-text">
+                            "The Best app I have used to order food in a while, so many options to choose from too, I
+                            would
+                            recommend to a freind. No questions asked"
+                        </p>
+
+                        <div class="feedback-author-container">
+                            <img srcset="./images/feedback-man.png 1x, ./images/feedback-man@2x.png"
+                                src="./images/feedback-man.png" alt="Portret of the man" width="48">
+
+                            <div class="feedback-author-text-container">
+                                <h3 class="feedback-item-title">Sumith Shah</h3>
+                                <p class="feedback-item-sub-text">Some Dude</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="feedback-item">
+
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+                        <svg class="feedback-item-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-star"></use>
+                        </svg>
+
+                        <p class="feedback-item-text">
+                            "The ease with which I can just go in and order what i want was amazing, It has been a very
+                            pleasant experience ordering from this app"
+                        </p>
+
+                        <div class="feedback-author-container">
+                            <img srcset="./images/feedback-woman.png 1x, ./images/feedback-woman@2x.png"
+                                src="./images/feedback-woman.png" alt="Portret of the woman" width="48">
+
+                            <div class="feedback-author-text-container">
+                                <h3 class="feedback-item-title">Sumith Shah</h3>
+                                <p class="feedback-item-sub-text">Some Dude</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Subscribe section -->
+        <section class="section">
+            <div class="container">
+
+                <picture>
+                    <source srcset="" media="(min-width: 1280px)">
+                    <source srcset="" media="(min-width: 768px)">
+                    <source srcset="./images/mobile/banana.png 1x, ./images/mobile/banana@2x.png 2x"
+                        media="(max-width: 767px)">
+                    <img class="subscribe-img" src="./images/mobile/banana.png" alt="A banana">
+                </picture>
+
+                <h2 class="section-title subscribe-title">Subscribe To Get Special Offers</h2>
+                <p class="subscribe-text">Order now and receive 10% off your first meal with Enjoy Your Favorite Food
+                    From Anywhere.</p>
+                <form class="subscribe-form" name="subscribe-form">
+                    <label class="subscribe-form-label">
+                        <input class="subscribe-form-input" type="email" name="user-email"
+                            placeholder="Enter your email" required>
+                    </label>
+                    <button class="subscribe-form-button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <form name="subscription-form"></form>
+
+            <p>
+                By subscribing you agree to with our
+                <a href="">Privacy Policy</a>
+            </p>
+
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Cookies Settings</a></li>
+            </ul>
+
+            <p>2022 FoodSta. All right reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
