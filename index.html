@@ -260,7 +260,7 @@
         </section>
 
         <!-- Subscribe section -->
-        <section class="section">
+        <section class="section subscribe-section">
             <div class="container">
 
                 <picture>
@@ -286,31 +286,41 @@
     </main>
 
     <footer class="footer">
+        <div class="footer-container-specific"></div>
         <div class="container">
-            <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
+            <div class="footer-logo-nav-link-container">
+                <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
 
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="">Home</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="">About</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="">Service</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="">Menu</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="">Contact</a></li>
+                </ul>
+            </div>
 
-            <form name="subscription-form"></form>
+            <p class="subscribe-form-title">Subscribe</p>
+            <form class="subscribe-form footer-form" name="subscribe-form">
+                <label class="subscribe-form-label">
+                    <input class="subscribe-form-input" type="email" name="user-email" placeholder="Enter your email"
+                        required>
+                </label>
+                <button class="footer-form-button" type="submit">Subscribe</button>
+            </form>
 
-            <p>
+            <p class="footer-terms-text">
                 By subscribing you agree to with our
-                <a href="">Privacy Policy</a>
+                <a class="footer-terms-link" href="">Privacy Policy</a>
             </p>
 
-            <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Service</a></li>
-                <li><a href="">Cookies Settings</a></li>
+            <ul class="footer-terms-list">
+                <li class="footer-terms-item"><a class="footer-terms-link" href="">Privacy Policy</a></li>
+                <li class="footer-terms-item"><a class="footer-terms-link" href="">Terms of Service</a></li>
+                <li class="footer-terms-item"><a class="footer-terms-link" href="">Cookies Settings</a></li>
             </ul>
 
-            <p>2022 FoodSta. All right reserved.</p>
+            <p class="footer-right-text">2022 FoodSta. All right reserved.</p>
         </div>
     </footer>
 </body>
