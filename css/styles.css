@@ -50,9 +50,9 @@ input {
 
 .container {
     width: 100%;
-    max-width: 320px;
+    max-width: 310px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .section-title {
