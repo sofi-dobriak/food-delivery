@@ -160,11 +160,18 @@ input {
 
     font-size: 16px;
     color: #000;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-item:first-child {
     font-weight: 700;
     color: #2c2c2c;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    color: #bbf330;
 }
 
 
@@ -447,6 +454,18 @@ input {
     outline: none;
 }
 
+.subscribe-form-input:placeholder-shown {
+    border: 0.85px solid #ffe550;
+}
+
+.subscribe-form-input:not(:placeholder-shown):valid {
+    border-color: #7eb101;
+}
+
+.subscribe-form-input:not(:placeholder-shown):invalid {
+    border-color: #ff705d;
+}
+
 .subscribe-form-button {
     border: none;
     padding: 12px 22px;
@@ -527,6 +546,14 @@ input {
 
 .footer-nav-link {
     color: #000;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: #bbf330;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
 
 .subscribe-form-title {
