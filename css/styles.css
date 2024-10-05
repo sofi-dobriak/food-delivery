@@ -50,7 +50,7 @@ input {
 
 .container {
     width: 100%;
-    max-width: 310px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -152,7 +152,6 @@ input {
 .mobile-menu-link {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     padding: 16px;
 
     font-size: 16px;
@@ -304,6 +303,7 @@ input {
 
 .favorite-text {
     text-align: center;
+    font-size: 16px;
     margin-bottom: 70px;
 }
 
@@ -342,23 +342,24 @@ input {
 }
 
 .feedback-text {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .feedback-item-icon {
     fill: #ffe550;
-    margin-bottom: 28px;
 }
 
 .feedback-item-text {
     font-weight: 700;
     font-size: 16px;
+    padding-top: 28px;
     margin-bottom: 40px;
 }
 
 .feedback-item-title {
     font-weight: 500;
     line-height: 1.5;
+    font-size: 14px;
 }
 
 .feedback-list {
@@ -408,7 +409,6 @@ input {
 }
 
 .subscribe-text {
-    font-size: 16px;
     margin-bottom: 40px;
 }
 
@@ -484,7 +484,8 @@ input {
     width: 252px;
     height: 66px;
     bottom: 0;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     background-repeat: no-repeat;
     background-image: url(../images/mobile/decor-fruits.png);
 }
@@ -506,8 +507,7 @@ input {
 
 .footer-logo-nav-link-container {
     display: flex;
-    gap: 60px;
-    align-items: flex-start;
+    gap: 46px;
 }
 
 .footer-nav-list {
@@ -571,17 +571,17 @@ input {
 
 /* === MEDIA QUERIES */
 
-@media screen and (min-resolution: 192dpi) {
+/* @media (min-resolution: 192dpi) {
 
-    /* .footer::before {
+    .footer::before {
         background-image: url(../images/mobile/decor-apple@2x.png);
     }
 
     .footer::after {
-        background-image: url(../images/mobile/decor-orange@2x.png);
+        background-image: url(../images/mobile/decor-fruits@2x.png);
     }
 
-    .footer-container::after {
-        background-image: url(../images/mobile/decor-fruits@2x.png);
-    } */
-}
+    .footer-container-specific::after {
+        background-image: url(../images/mobile/decor-orange@2x.png);
+    }
+} */
