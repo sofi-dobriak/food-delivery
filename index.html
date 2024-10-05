@@ -82,7 +82,15 @@
                     Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
                 </p>
                 <button class="button hero-button" type="button">Order Now</button>
-                <!-- <img src="./images/hero-section.png" alt="Salad bowl" width="528"> -->
+
+                <picture>
+                    <source srcset="./images/desktop/hero-img.png 1x, ./images/desktop/hero-img@2x.png 2x"
+                        media="(min-width: 1280px)">
+                    <source srcset="./images/tablet/hero-img.png 1x, ./images/tablet/hero-img@2x.png 2x"
+                        media="(min-width: 768px)">
+                    <img class="hero-image" src="./images/tablet/hero-img.png" alt="Salad">
+                </picture>
+
             </div>
         </section>
 
@@ -91,9 +99,11 @@
             <div class="container">
 
                 <picture>
-                    <source srcset="" media="(min-width: 1280px)" />
-                    <source srcset="" media="(min-width: 768px)" />
-                    <source srcset="./images/mobile/apple.png 1x, ./images/mobile/apple@2x.png 2x"
+                    <source srcset="./images/desktop/green-apple.png 1x, ./images/desktop/green-apple@2x.png 2x"
+                        media="(min-width: 1280px)" />
+                    <source srcset="./images/tablet/green-apple.png 1x, ./images/tablet/green-apple@2x.png 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/green-apple.png 1x, ./images/mobile/green-apple@2x.png 2x"
                         media="(max-width: 767px)" />
                     <img class="offer-img" src="./images/mobile/apple.png" alt="A green apple">
                 </picture>
@@ -150,8 +160,10 @@
                 <ul class="favorite-list">
                     <li class="favorite-item">
                         <picture>
-                            <source srcset="" media="(min-width: 1280px)">
-                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/desktop/gamburger.png 1x, ./images/desktop/gamburger@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/gamburger.png 1x, ./images/tablet/gamburger@2x.png 2x"
+                                media="(min-width: 768px)">
                             <source srcset="./images/mobile/gamburger.png 1x, ./images/mobile/gamburger@2x.png 2x"
                                 media="(max-width: 767px)">
                             <img class="favorite-item-img" src="./images/mobile/gamburger.png" alt="Gamburger">
@@ -160,8 +172,10 @@
 
                     <li class="favorite-item">
                         <picture>
-                            <source srcset="" media="(min-width: 1280px)">
-                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/desktop/pasta.png 1x, ./images/desktop/pasta@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/pasta.png 1x, ./images/tablet/pasta@2x.png 2x"
+                                media="(min-width: 768px)">
                             <source srcset="./images/mobile/pasta.png 1x, ./images/mobile/pasta@2x.png 2x"
                                 media="(max-width: 767px)">
                             <img class="favorite-item-img" src="./images/mobile/pasta.png" alt="Pasta">
@@ -170,11 +184,43 @@
 
                     <li class="favorite-item">
                         <picture>
-                            <source srcset="" media="(min-width: 1280px)">
-                            <source srcset="" media="(min-width: 768px)">
+                            <source srcset="./images/desktop/pizza.png 1x, ./images/desktop/pizza@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/pizza.png 1x, ./images/tablet/pizza@2x.png 2x"
+                                media="(min-width: 768px)">
                             <source srcset="./images/mobile/pizza.png 1x, ./images/mobile/pizza@2x.png 2x"
                                 media="(max-width: 767px)">
-                            <img class="favorite-item-img" src="./images/mobile/pizza.png" alt="Gamburger">
+                            <img class="favorite-item-img" src="./images/mobile/pizza.png" alt="Pizza">
+                        </picture>
+                    </li>
+
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="./images/desktop/salat.png 1x, ./images/desktop/salat@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/salat.png 1x, ./images/tablet/salat@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="favorite-item-img" src="./images/tablet/salat.png" alt="Salad">
+                        </picture>
+                    </li>
+
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="./images/desktop/chicken.png 1x, ./images/desktop/chicken@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/chicken.png 1x, ./images/tablet/chicken@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="favorite-item-img" src="./images/tablet/chicken.png" alt="Chicken">
+                        </picture>
+                    </li>
+
+                    <li class="favorite-item">
+                        <picture>
+                            <source srcset="./images/desktop/borshch.png 1x, ./images/desktop/borshch@2x.png 2x"
+                                media="(min-width: 1280px)">
+                            <source srcset="./images/tablet/borshch.png 1x, ./images/tablet/borshch@2x.png 2x"
+                                media="(min-width: 768px)">
+                            <img class="favorite-item-img" src="./images/tablet/borshch.png" alt="Borsh">
                         </picture>
                     </li>
                 </ul>
@@ -262,8 +308,10 @@
             <div class="container">
 
                 <picture>
-                    <source srcset="" media="(min-width: 1280px)">
-                    <source srcset="" media="(min-width: 768px)">
+                    <source srcset="./images/desktop/banana.png 1x, ./images/desktop/banana@2x.png 2x"
+                        media="(min-width: 1280px)">
+                    <source srcset="./images/tablet/banana.png 1x, ./images/tablet/banana@2x.png 2x"
+                        media="(min-width: 768px)">
                     <source srcset="./images/mobile/banana.png 1x, ./images/mobile/banana@2x.png 2x"
                         media="(max-width: 767px)">
                     <img class="subscribe-img" src="./images/mobile/banana.png" alt="A banana">

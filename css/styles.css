@@ -50,9 +50,9 @@ input {
 
 .container {
     width: 100%;
-    max-width: 310px;
+    max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .section-title {
@@ -84,6 +84,10 @@ input {
 
 .header-nav-list,
 .header-button {
+    display: none;
+}
+
+.hero-image {
     display: none;
 }
 
@@ -319,8 +323,12 @@ input {
     justify-content: center;
 }
 
+.favorite-item:nth-child(n+4) {
+    display: none;
+}
+
 .favorite-item-img {
-    padding: 28px;
+    padding: 16px;
     border: 11px solid #ffe550;
     border-radius: 100%;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
