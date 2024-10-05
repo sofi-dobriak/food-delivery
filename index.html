@@ -369,6 +369,45 @@
             <p class="footer-right-text">2022 FoodSta. All right reserved.</p>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="modal-overlay is-open"> <!--is-open-->
+        <div class="modal-window">
+
+            <button class="modal-form-button-close" type="button">
+                <svg class="modal-form-icon-close" width="10" height="10">
+                    <use href="./images/icons.svg#icon-close-button"></use>
+                </svg>
+            </button>
+
+            <p class="modal-form-title">Order Form</p>
+
+            <form name="modal-form">
+                <div class="modal-form-container">
+                    <div class="modal-input-wrap">
+                        <label class="modal-form-label" for="user-name">Name</label>
+                        <input class="modal-form-input" type="text" name="user-name" id="user-name"
+                            placeholder="Your name" required minlength="3" />
+                    </div>
+
+                    <div class="modal-input-wrap">
+                        <label class="modal-form-label" for="user-number">Phone number</label>
+                        <input class="modal-form-input" type="tel" name="user-number" id="user-number"
+                            placeholder="+38(0_ _) _ _ _   _ _   _ _" required
+                            pattern="^\+38\(0[0-9]{2}\)[0-9]{3} [0-9]{2} [0-9]{2}$" />
+                    </div>
+
+                    <div class="modal-input-wrap">
+                        <label class="modal-form-label" for="user-email">E-mail</label>
+                        <input class="modal-form-input" type="email" name="user-email" id="user-email"
+                            placeholder="example@gmail.com" />
+                    </div>
+                </div>
+
+                <button class="modal-form-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
