@@ -1129,6 +1129,7 @@ input {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 100px;
+        z-index: 999;
     }
 
     .footer-terms-link {
