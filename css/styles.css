@@ -648,7 +648,7 @@ input {
 
     border-radius: 30px;
     width: 320px;
-    height: 449px;
+    height: 450px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
     background-color: #ffe550;
 
@@ -1099,5 +1099,25 @@ input {
 
     .footer-container-specific::after {
         display: none;
+    }
+
+    /* Modal window */
+
+    .modal-window {
+        width: 458px;
+        padding: 32px;
+    }
+
+    .modal-form-container {
+        align-items: center;
+    }
+
+    .modal-form-button-close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .modal-form-input {
+        width: 394px;
     }
 }
