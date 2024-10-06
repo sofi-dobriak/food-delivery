@@ -1133,6 +1133,7 @@ input {
 
     .footer-terms-link {
         font-size: 12px;
+        line-height: 1.5;
     }
 
     .footer-terms-list {
@@ -1143,6 +1144,7 @@ input {
 
     .footer-right-text {
         font-size: 12px;
+        line-height: 1.5;
     }
 
     .footer::before {
@@ -1381,6 +1383,12 @@ input {
 
 
     /* Footer */
+
+    .footer-logo-nav-link-container {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+    }
 
 
     .footer::before {
