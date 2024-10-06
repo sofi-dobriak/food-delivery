@@ -209,6 +209,11 @@ input {
     background-color: #ffe450;
 }
 
+.hero-arrow-button-right,
+.hero-arrow-button-left {
+    display: none;
+}
+
 
 /* Offer section */
 
@@ -865,10 +870,51 @@ input {
         margin-bottom: 32px;
     }
 
+    .image-icon-container {
+        position: relative;
+        display: inline-block;
+    }
+
     .hero-image {
         display: block;
         max-width: 292px;
         border-radius: 100%;
         border: 14px solid #ffe550;
+    }
+
+    .hero-arrow-button-right,
+    .hero-arrow-button-left {
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 34px;
+        height: 28px;
+
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+
+        cursor: pointer;
+    }
+
+    .hero-arrow-button-left {
+        right: 270px;
+    }
+
+    .hero-arrow-icon {
+        fill: #2c2c2c;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hero-arrow-button-right:hover .hero-arrow-icon,
+    .hero-arrow-button-left:hover .hero-arrow-icon {
+        fill: #7eb101;
     }
 }

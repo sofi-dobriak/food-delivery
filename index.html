@@ -86,13 +86,27 @@
                     <button class="button hero-button" type="button">Order Now</button>
                 </div>
 
-                <picture>
-                    <source srcset="./images/desktop/hero-img.png 1x, ./images/desktop/hero-img@2x.png 2x"
-                        media="(min-width: 1280px)">
-                    <source srcset="./images/tablet/hero-img.png 1x, ./images/tablet/hero-img@2x.png 2x"
-                        media="(min-width: 768px)">
-                    <img class="hero-image" src="./images/tablet/hero-img.png" alt="Salad">
-                </picture>
+                <div class="image-icon-container">
+                    <picture class="hero-image-container">
+                        <source srcset="./images/desktop/hero-img.png 1x, ./images/desktop/hero-img@2x.png 2x"
+                            media="(min-width: 1280px)">
+                        <source srcset="./images/tablet/hero-img.png 1x, ./images/tablet/hero-img@2x.png 2x"
+                            media="(min-width: 768px)">
+                        <img class="hero-image" src="./images/tablet/hero-img.png" alt="Salad">
+                    </picture>
+
+                    <button class="hero-arrow-button-right" type="button">
+                        <svg class="hero-arrow-icon" width="12" height="20">
+                            <use href="./images/icons.svg#icon-hero-right-arrow"></use>
+                        </svg>
+                    </button>
+
+                    <button class="hero-arrow-button-left" type="button">
+                        <svg class="hero-arrow-icon" width="12" height="20">
+                            <use href="./images/icons.svg#icon-left-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
