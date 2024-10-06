@@ -1129,7 +1129,6 @@ input {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 100px;
-        z-index: 999;
     }
 
     .footer-terms-link {
@@ -1390,6 +1389,10 @@ input {
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: row;
+    }
+
+    .footer-terms-list {
+        z-index: 1;
     }
 
 
