@@ -1128,12 +1128,13 @@ input {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
 
     .footer-terms-link {
         font-size: 12px;
         line-height: 1.5;
+        cursor: pointer;
     }
 
     .footer-terms-list {
