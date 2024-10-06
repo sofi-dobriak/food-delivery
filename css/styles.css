@@ -1180,7 +1180,7 @@ input {
         display: flex;
         align-items: center;
         gap: 90px;
-        width: 1214px;
+        width: 1234px;
     }
 
     .offer-section-text-container {
@@ -1289,4 +1289,28 @@ input {
     }
 
     /* Subscribe section */
+
+    .subscribe-section {
+        margin: 200px 0;
+    }
+
+    .subscribe-img {
+        margin-bottom: 0;
+    }
+
+    .subscribe-section-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .subscribe-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-text {
+        max-width: 500px;
+    }
 }
