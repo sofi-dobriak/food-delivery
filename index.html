@@ -37,20 +37,20 @@
                     <li class="header-nav-item"><a class="header-nav-link" href="">Contact</a></li>
                 </ul>
 
-                <button class="button header-button" type="button">Order Now</button>
+                <button class="button header-button modal-btn-open" type="button">Order Now</button>
             </nav>
 
 
             <!-- Burger button -->
-            <button class="header-burger" type="button">
+            <button class="header-burger menu-btn-open" type="button">
                 <svg class="header-burger-icon" width="24" height="16">
                     <use href="./images/icons.svg#icon-burder-button"></use>
                 </svg>
             </button>
 
             <!-- Mobile menu -->
-            <div class="mobile-menu "> <!--is-open-->
-                <button class="mobile-menu-button-close" type="button">
+            <div class="mobile-menu"> <!--is-open-->
+                <button class="mobile-menu-button-close menu-btn-close" type="button">
                     <svg class="mobile-menu-icon-close" width="10" height="10">
                         <use href="./images/icons.svg#icon-close-button"></use>
                     </svg>
@@ -83,7 +83,7 @@
                         where you are.
                         Order now and enjoy a hassle-free and delicious meal from the comfort of your own home.
                     </p>
-                    <button class="button hero-button" type="button">Order Now</button>
+                    <button class="button hero-button modal-btn-open" type="button">Order Now</button>
                 </div>
 
                 <div class="image-icon-container">
@@ -164,7 +164,7 @@
                     </ul>
 
                     <div class="offer-button-link-container">
-                        <button class="button offer-button" type="button">Order Now</button>
+                        <button class="button offer-button modal-btn-open" type="button">Order Now</button>
                         <div class="offer-link-container">
                             <a class="offer-link" href="">
                                 Read more
@@ -408,10 +408,10 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal-overlay "> <!--is-open-->
+    <div class="modal-overlay">
         <div class="modal-window">
 
-            <button class="modal-form-button-close" type="button">
+            <button class="modal-form-button-close modal-btn-close" type="button">
                 <svg class="modal-form-icon-close" width="10" height="10">
                     <use href="./images/icons.svg#icon-close-button"></use>
                 </svg>
@@ -445,6 +445,10 @@
             </form>
         </div>
     </div>
+
+    <!-- Sripts -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-form.js"></script>
 </body>
 
 </html>
