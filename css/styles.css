@@ -610,7 +610,6 @@ input {
 }
 
 .footer-terms-text-link {
-    font-size: 10px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #7eb101;
@@ -1115,7 +1114,8 @@ input {
         margin-bottom: 12px;
     }
 
-    .footer-terms-text {
+    .footer-terms-text,
+    .footer-terms-link {
         font-size: 12px;
         margin-bottom: 100px;
     }
