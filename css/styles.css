@@ -183,7 +183,7 @@ input {
 
 .hero-section {
     padding-top: 60px;
-    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
 
 .hero-title {
@@ -217,7 +217,7 @@ input {
 /* Offer section */
 
 .offer-section {
-    margin-bottom: 132px;
+    padding-bottom: 132px;
 }
 
 .offer-img {
@@ -233,6 +233,13 @@ input {
     margin-bottom: 28px;
 }
 
+.offer-list {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .offer-item-icon {
     fill: #7eb101;
     margin-left: 10px;
@@ -245,12 +252,8 @@ input {
     margin-bottom: 16px;
 }
 
-.offer-item-text {
+.offer-item-text:not(:last-child) {
     margin-bottom: 24px;
-}
-
-.offer-list li:last-child .offer-item-text {
-    margin-bottom: 28px;
 }
 
 .offer-button-link-container {
@@ -306,7 +309,7 @@ input {
 /* Favorite section */
 
 .favorite-section {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .favorite-title {
@@ -351,7 +354,7 @@ input {
 /* Feedback secton */
 
 .feedback-section {
-    margin-bottom: 26px;
+    padding-bottom: 26px;
 }
 
 .feedback-title {
@@ -368,6 +371,12 @@ input {
     gap: 40px;
 }
 
+.star-list {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
+}
+
 .feedback-item-icon {
     fill: #ffe550;
 }
@@ -375,7 +384,6 @@ input {
 .feedback-item-text {
     font-weight: 700;
     font-size: 16px;
-    padding-top: 28px;
     margin-bottom: 40px;
 }
 
@@ -413,7 +421,7 @@ input {
 /* Subscribe section */
 
 .subscribe-section {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .subscribe-img {
@@ -441,7 +449,7 @@ input {
     background-color: #fff;
     width: 279px;
     height: 42px;
-    padding: 12px;
+    padding: 12px 18px;
 }
 
 .subscribe-form-input::placeholder {
@@ -546,7 +554,7 @@ input {
 .footer-form-input {
     border: 0.85px solid #ffe550;
     border-radius: 30px;
-    padding: 12px;
+    padding: 12px 18px;
     width: 279px;
 }
 
@@ -756,7 +764,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
 }
 
 .modal-input-wrap {
@@ -780,7 +788,7 @@ input {
     height: 48px;
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #fff;
-    padding: 14px 12px;
+    padding: 14px 18px;
     outline: none;
 }
 
@@ -908,19 +916,19 @@ input {
 
     /* Hero section */
 
-    .hero-section {
-        margin-bottom: 42px;
-    }
-
     .hero-section-container {
         display: flex;
         align-items: flex-end;
-        gap: 16px;
+        gap: 12px;
     }
 
     .hero-title {
         font-size: 42px;
         margin-bottom: 44px;
+    }
+
+    .hero-text {
+        max-width: 336px;
     }
 
     .image-icon-container {
@@ -975,7 +983,7 @@ input {
     /* Offer section */
 
     .offer-section {
-        margin-bottom: 190px;
+        padding-bottom: 190px;
     }
 
     .offer-img {
@@ -993,20 +1001,23 @@ input {
     }
 
     .offer-list {
-        display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: space-between;
     }
 
-    .offer-item-text {
-        margin-bottom: 28px;
+    .delivery-item-text {
+        max-width: 324px;
+    }
+
+    .order-item-text {
+        max-width: 284px;
     }
 
 
     /* Favorite section */
 
     .favorite-section {
-        margin-bottom: 160px;
+        padding-bottom: 160px;
     }
 
     .favorite-title {
@@ -1036,7 +1047,7 @@ input {
     /* Feedback secton */
 
     .feedback-section {
-        margin-bottom: 46px;
+        padding-bottom: 46px;
     }
 
     .feedback-title {
@@ -1061,7 +1072,7 @@ input {
     /* Subscribe section */
 
     .subscribe-section {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .subscribe-img {
@@ -1166,12 +1177,12 @@ input {
 
     .modal-window {
         max-width: 458px;
-        padding: 32px;
+        padding: 40px;
     }
 
     .modal-form-button-close {
-        top: 12px;
-        right: 12px;
+        top: 20px;
+        right: 26px;
     }
 
     .modal-form-container {
@@ -1196,7 +1207,7 @@ input {
 
     .hero-section {
         padding-top: 20px;
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .hero-section-container {
@@ -1219,6 +1230,11 @@ input {
     .hero-image {
         min-width: 528px;
         border: 26px solid #ffe550;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hero-image:hover {
+        border-color: #BBF330;
     }
 
     .hero-arrow-button-right,
@@ -1229,9 +1245,8 @@ input {
     /* Offer section */
 
     .offer-section {
-        padding-top: 124px;
-        padding-bottom: 124px;
-        margin-bottom: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
         background-color: #ffe550;
     }
 
@@ -1275,9 +1290,6 @@ input {
     .offer-list {
         align-items: flex-start;
         gap: 68px;
-    }
-
-    .offer-item-text {
         margin-bottom: 32px;
     }
 
@@ -1306,7 +1318,8 @@ input {
     /* Favorite section */
 
     .favorite-section {
-        margin-bottom: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .favorite-text {
@@ -1328,7 +1341,6 @@ input {
     .feedback-section {
         padding-top: 124px;
         padding-bottom: 124px;
-        margin-bottom: 120px;
 
         background-color: #ffe550;
     }
@@ -1351,7 +1363,7 @@ input {
     /* Subscribe section */
 
     .subscribe-section {
-        margin: 200px 0;
+        padding: 200px 0;
     }
 
     .subscribe-section-container {

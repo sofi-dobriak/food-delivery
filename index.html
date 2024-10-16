@@ -30,11 +30,11 @@
                 </a>
 
                 <ul class="header-nav-list">
-                    <li class="header-nav-item"><a class="header-nav-link" href="">Home</a></li>
-                    <li class="header-nav-item"><a class="header-nav-link" href="">About</a></li>
-                    <li class="header-nav-item"><a class="header-nav-link" href="">Service</a></li>
-                    <li class="header-nav-item"><a class="header-nav-link" href="">Menu</a></li>
-                    <li class="header-nav-item"><a class="header-nav-link" href="">Contact</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./index.html">Home</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#about">About</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#">Service</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#menu">Menu</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="#subscribe">Contact</a></li>
                 </ul>
 
                 <button class="button header-button modal-btn-open" type="button">Order Now</button>
@@ -59,11 +59,11 @@
                 <!-- Mobile menu links -->
                 <nav>
                     <ul class="mobile-menu-list">
-                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Home</a></li>
-                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">About</a></li>
-                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Service</a></li>
-                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Menu</a></li>
-                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contact</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="./index.html">Home</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="#about">About</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Service</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="#menu">Menu</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-menu-link" href="#subscribe">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -111,10 +111,10 @@
         </section>
 
         <!-- Offer section -->
-        <section class="section offer-section">
+        <section class="section offer-section" id="about">
             <div class="container offer-section-container">
 
-                <div>
+                <div> <!-- div for desktop apple-->
                     <picture class="apple-container">
                         <source srcset="./images/desktop/green-apple.png 1x, ./images/desktop/green-apple@2x.png 2x"
                             media="(min-width: 1280px)" />
@@ -141,7 +141,7 @@
                                 </svg>
                             </div>
                             <h3 class="offer-item-title">Fasest Delivery</h3>
-                            <p class="offer-item-text">
+                            <p class="offer-item-text delivery-item-text">
                                 Our advanced logistics system and dedicated delivery partners ensure that your meals are
                                 delivered to you within 30-minutes.
                             </p>
@@ -153,7 +153,7 @@
                                 </svg>
                             </div>
                             <h3 class="offer-item-title">Easy To Order</h3>
-                            <p class="offer-item-text">
+                            <p class="offer-item-text order-item-text">
                                 You can browse through a wide variety of cuisines and restaurants, select your favorite
                                 meals, and place your order in just a few clicks.
                             </p>
@@ -163,7 +163,7 @@
                     <div class="offer-button-link-container">
                         <button class="button offer-button modal-btn-open" type="button">Order Now</button>
                         <div class="offer-link-container">
-                            <a class="offer-link" href="">
+                            <a class="offer-link" href="#subscribe">
                                 Read more
                                 <svg class="offer-link-icon" width="6" height="10">
                                     <use href="./images/icons.svg#icon-arrow-right"></use>
@@ -177,7 +177,7 @@
         </section>
 
         <!-- Favorite section -->
-        <section class="section favorite-section">
+        <section class="section favorite-section" id="menu">
             <div class="container">
                 <h2 class="section-title favorite-title">Some of Our Favorites</h2>
                 <p class="favorite-text">Looking for something delicious?</p>
@@ -260,21 +260,23 @@
                 <ul class="feedback-list">
                     <li class="feedback-item">
 
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
+                        <ul class="star-list">
+                            <li> <svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li> <svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                        </ul>
 
                         <p class="feedback-item-text">
                             "The Best app I have used to order food in a while, so many options to choose from too, I
@@ -292,21 +294,23 @@
                     </li>
                     <li class="feedback-item">
 
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
-                        <svg class="feedback-item-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-star"></use>
-                        </svg>
+                        <ul class="star-list">
+                            <li> <svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li><svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                            <li> <svg class="feedback-item-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg></li>
+                        </ul>
 
                         <p class="feedback-item-text">
                             "The ease with which I can just go in and order what i want was amazing, It has been a very
@@ -327,7 +331,7 @@
         </section>
 
         <!-- Subscribe section -->
-        <section class="section subscribe-section">
+        <section class="section subscribe-section" id="subscribe">
             <div class="container subscribe-section-container">
 
                 <picture>
@@ -365,11 +369,11 @@
                     <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
 
                     <ul class="footer-nav-list">
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">Home</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">About</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">Service</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">Menu</a></li>
-                        <li class="footer-nav-item"><a class="footer-nav-link" href="">Contact</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="./index.html">Home</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#about">About</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Service</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#menu">Menu</a></li>
+                        <li class="footer-nav-item"><a class="footer-nav-link" href="#subscribe">Contact</a></li>
                     </ul>
                 </div>
 
